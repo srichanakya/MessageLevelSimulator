@@ -1,0 +1,66 @@
+<html>
+
+<head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.js"></script>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+<link href="https://fonts.googleapis.com/css?family=Advent+Pro&display=swap" rel="stylesheet">
+
+
+<style type="text/css">
+	.container
+	{
+		width: 40vw;
+		margin-left: 30vw;
+		margin-top: 10vh;
+	}
+</style>
+
+
+</head>
+
+<body>
+
+
+<nav class="navbar navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">
+    <i class="fas fa-laptop-code"></i>
+     Verification & Validation 
+  </a>
+</nav>
+
+
+<form action="/system2/transfer" method="get">
+
+<div class="container">
+<div class="form-group">
+    <label >Name</label>
+    <input type="text" class="form-control" id="name" name="name">
+</div>
+
+<div class="form-group">
+    <label >Roll</label>
+    <input type="text" class="form-control" id="roll" name="roll" >
+  </div>
+
+  <div class="form-group">
+    <label >Branch</label>
+    <input type="text" class="form-control" id="branch" id="branch" >   
+  </div>
+
+  <div class="form-group">
+    <label >Campus</label>
+    <input type="text" class="form-control" id="campus" id="campus" >
+    
+  </div>
+<button type="submit" class="btn btn-outline-primary" id="send">send</button>
+</div>
+</form>
+
+
+<script src="/ws_secondmsglen2.js"></script>
+</body>
+</html>

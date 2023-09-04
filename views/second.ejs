@@ -1,0 +1,60 @@
+<html>
+
+<head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.js"></script>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+<link href="https://fonts.googleapis.com/css?family=Advent+Pro&display=swap" rel="stylesheet">
+
+<style type="text/css">
+	.container{
+		width: 40vw;
+		margin-left: 30vw;
+		margin-top: 15vh;
+
+	}
+    h1{
+      font-size: 28px;
+      position: absolute;
+      top: 10vh;
+      left:5vw;
+      border-left: 2px solid gray;
+      padding-left: 5px;
+    }
+</style>
+
+</head>
+
+<body>
+
+<!-- Image and text -->
+<nav class="navbar navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">
+    <i class="fas fa-laptop-code"></i>
+     Verification & Validation 
+  </a>
+</nav>
+
+
+<h1>System 2</h1>
+
+<form action="/system2/msglen2" method="get">
+
+<div class="container">
+ <div class="form-group">
+    <label >Message Length</label>
+    <input type="text" class="form-control" id="msglen" >
+    
+  </div>
+
+<button type="submit" class="btn btn-outline-primary" id="send">select</button>
+</div>
+</form>
+
+
+<script src="ws_second.js"></script>
+</body>
+</html>

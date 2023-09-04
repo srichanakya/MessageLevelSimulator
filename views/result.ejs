@@ -1,0 +1,82 @@
+<html>
+
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+<link href="https://fonts.googleapis.com/css?family=Advent+Pro&display=swap" rel="stylesheet">
+	
+<style type="text/css">
+	table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+h1{
+	font-size:  28px;
+	position: absolute;
+	left: 5vw;
+	top: 12vh;
+	padding-left: 10px;
+	border-left: 2px solid gray;
+	font-weight: normal;
+
+}
+.container{
+	position: absolute;
+	top: 25vh;
+	width: 60vw;
+	margin-left: 20vw;
+}
+</style>
+
+</head>
+
+
+
+<body>
+
+
+<nav class="navbar navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">
+    <i class="fas fa-laptop-code"></i>
+     Verification & Validation 
+  </a>
+</nav>
+
+
+<h1>Query Results</h1>
+<div class="container">
+<table>
+	<tr>
+		<th>Name</th>
+		<th>Roll</th>
+		<th>Branch</th>
+		<th>Campus</th>
+		<th>Created</th>
+	</tr>
+
+<%result.forEach(function(r){%>
+<tr>
+<td><%=r.name%></td>
+<td><%=r.roll%></td>
+<td><%=r.branch%></td>
+<td><%=r.campus%></td>
+<td><%=r.date%></td>
+</tr>
+<%})%>
+</table>
+</div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+<link href="https://fonts.googleapis.com/css?family=Advent+Pro&display=swap" rel="stylesheet">
+
+	<style type="text/css">
+		html,body
+		{
+			margin:0;
+			width: 100%;
+			height: 100%;
+			background-image: url('back2.jpg');
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-position: center;
+    	
+		}
+
+		.container
+		{
+			position: absolute;
+			top: 20vh;
+			left: 30vw;
+			width: 40vw;
+		}
+		.container2
+		{
+			position: absolute;
+			width: 30vw;
+			left: 35vw;
+			top: 30vh;
+		}
+		.text
+		{
+			width: 20vw;
+			margin-top: 5%;
+		}
+		
+		input{
+			margin-top: 0;
+			margin-bottom: 3%;
+			width: 50vw;
+			color: black;
+			font-weight: bold;
+		}
+		
+		h1{
+			font-size: 28px;
+			position: absolute;
+			top: 10vh;
+			left:5vw;
+			border-left: 2px solid gray;
+			padding-left: 10px;
+		}
+
+		
+	</style>
+</head>
+<body>
+
+<!-- Image and text -->
+<nav class="navbar navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">
+    <i class="fas fa-laptop-code"></i>
+     Verification & Validation 
+  </a>
+</nav>
+
+<h1>Select System</h1>
+<div class="container">
+
+<form action="/home" method="get" onchange="this.form.submit()">
+<select name="sel" class="custom-select custom-select" onchange="this.form.submit()">
+	<option>-- Choose System --</option>
+<option value = 1>System 1</option>
+<option value=2>System 2</option>
+</select>
+</form>
+
+</body>
+</html>
